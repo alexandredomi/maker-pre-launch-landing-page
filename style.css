@@ -1,0 +1,340 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(8,12,32);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+.center{
+    width: 1100px;
+    display: flex;
+    align-items: center;
+}
+main #home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    padding: 50px 0px;
+    gap: 10px;
+}
+main #home .esq{
+    width: 33%;
+    height: 400px;
+    background-image: url("assets/illustration-hero-left.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+main #home .center{
+    max-width: 500px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-image: url("assets/bg-hero-squiggle.svg");
+}
+main #home .dir{
+    width: 33.3%;
+    height: 400px;
+    background-image: url("assets/illustration-hero-right.svg");
+    background-repeat: no-repeat;
+}
+main #home .center h1{
+    font-size: 45px;
+}
+main #home .center h1 span{
+    color: #3ee9e5;
+}
+main #home .center p{
+    color: rgb(194, 194, 194);
+    /* letter-spacing: 1px;
+    word-spacing: 2px; */
+    line-height: 22px;
+}
+main #home .center img{
+    margin: 30px 0px;
+}
+#diferenciais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    padding: 50px 0px;
+    
+}
+#diferenciais .center{
+    display: flex;
+}
+#diferenciais .center .carts{
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+}
+#diferenciais .center .carts-center{
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+#diferenciais .center .carts .img-cart,.carts-center .img-cart{
+    width: 170px;
+    min-height: 150px;
+    background-color: #0a3f69;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 9px 8px 14px 0px rgba(0,0,0,0.73);
+    -moz-box-shadow: 9px 8px 14px 0px rgba(0,0,0,0.73);
+    box-shadow: 9px 8px 14px 0px rgba(0,0,0,0.73);
+}
+#diferenciais .center .carts .img-cart img{
+    width: auto;
+}
+#diferenciais .center .carts .txt-cart, .carts-center .txt-cart{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#diferenciais .center .carts .txt-cart h2 .carts-center .txt-cart h2{
+    font-size: 20px;
+}
+#diferenciais .center .carts .txt-cart p, .carts-center .txt-cart p{
+    font-size: 16px;
+    color: rgb(174, 174, 174);
+}
+/*------produtos------*/
+#products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    padding: 50px 0px;
+}
+#products .center{
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+#products .center .text-prod{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    text-align: center;
+    gap: 10px;
+}
+#products .center .text-prod h2{
+    font-size: 40px;
+}
+#products .center .text-prod p{
+    color: rgb(200, 200, 200);
+}
+.baner-prod{
+    display: flex;
+    gap: 20px;
+}
+.baner-prod .produto-esq, .produto-dir{
+    max-width: 380px;
+    height: 300px;
+    background-color: white;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+    color: rgb(66, 66, 66);
+    font-size: 14px;
+    -webkit-box-shadow: 9px 8px 14px 0px rgba(0,0,0,0.73);
+    -moz-box-shadow: 9px 8px 14px 0px rgba(0,0,0,0.73);
+    box-shadow: 9px 8px 14px 0px rgba(0,0,0,0.73);
+}
+.baner-prod .produto-dir{
+    background-color: #3ee9e5;
+}
+.baner-prod .produto-esq .img, .produto-dir .img{
+    width: 40px;
+    position: absolute;
+    top: -20px;
+    left: 50px;
+}
+.baner-prod .produto-dir .img{
+    top: -25px;
+    left: 50px;
+}
+.baner-prod .produto-esq:hover, .produto-dir:hover{
+    -webkit-box-shadow: 19px 25px 15px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 19px 25px 15px 0px rgba(0,0,0,1);
+    box-shadow: 19px 25px 15px 0px rgba(0,0,0,1);
+    transition: 0.3s;
+}
+.baner-prod .produto-esq p, .produto-dir p{
+    margin: 5px 0px;
+}
+.baner-prod .produto-esq p span, .produto-dir p span{
+    font-size: 20px;
+    color: rgb(12, 12, 12);
+    font-weight: 600;
+}
+.baner-prod .produto-esq .free, .produto-dir .pago{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 600;
+    margin: 5px;
+}
+.baner-prod .produto-esq .check, .produto-dir .check{
+    display: flex;
+    align-items: center;
+}
+.baner-prod .produto-esq .check img{
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+/*-------footer-------*/
+footer{
+    min-height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 100px 0px;
+    padding: 50px 0px;
+    background-image: url("assets/bg-footer-squiggle.svg");
+}
+footer .center{
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.text-footer{
+    font-size: 25px;
+    text-align: center;
+}
+.input-footer{
+    display: flex;
+    gap: 20px;
+}
+.input-footer input{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 15px;
+    background-color: #0a3f69;
+    -webkit-box-shadow: 6px 14px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 14px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 14px 15px 0px rgba(0,0,0,0.75)
+}
+.input-footer button{
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #3ee9e5;
+    -webkit-box-shadow: 6px 14px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 14px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 14px 15px 0px rgba(0,0,0,0.75);
+}
+.input-footer button:hover{
+    background-color: #00908e;
+    transition: 0.3s;
+}
+
+
+/*-----------tablet-----------*/
+@media screen and (max-width: 1100px) {
+    header .center{
+        padding-left: 20px;
+    }
+    #diferenciais .center{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #diferenciais .center .carts,  #diferenciais .center .carts-center{
+        display: flex;
+        flex-direction: row;
+        min-width: 500px;
+        height: 180px;
+    }
+    #diferenciais .center .carts .img-cart,.carts-center .img-cart{
+        min-width: 150px;
+    }
+    .baner-prod{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+}
+
+/*----------------celular-------------*/
+
+@media screen and (max-width: 510px) {
+    #diferenciais .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    #diferenciais .center .carts,  #diferenciais .center .carts-center{
+        display: flex;
+        flex-direction: column;
+        min-width: 280px;
+        height: 310px;
+        text-align: center;
+        align-items: center;
+    }
+    .img-cart{
+        width: 150px;
+    }
+    .text-prod{
+        max-width: 280px;
+    }
+    .baner-prod{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+    .produto-esq{
+        width: 90%;
+    }
+    .produto-dir{
+        width: 90%;
+    }
+    .text-footer{
+        width: 90%;
+    }
+    .input-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .input-footer input, .input-footer button{
+        width: 90%;
+    }
+}
